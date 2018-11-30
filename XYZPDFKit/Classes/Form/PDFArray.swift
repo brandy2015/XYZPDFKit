@@ -163,9 +163,9 @@ internal class PDFArray: PDFObject {
 import UIKit
 extension PDFArray: NSCopying {
     func copy(with zone: NSZone? = nil) -> Any {
-        return self
-            
-//            type(of: self).init(arrayRef: arr)
+        
+        return PDFArray(arrayRef: arr)
+//        return self.type(of: self).init(arrayRef: arr)
     }
     
 }
