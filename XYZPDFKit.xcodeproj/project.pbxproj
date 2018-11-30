@@ -66,7 +66,7 @@
 		D6A83D2721B0D28A00D634E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D6A83D2921B0D28B00D634E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6A83D2C21B0D28B00D634E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D6A83D2E21B0D28B00D634E6 /* XYZPDFKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XYZPDFKit-Info.plist"; sourceTree = "<group>"; };
+		D6A83D2E21B0D28B00D634E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6A83D9A21B0D4E100D634E6 /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
 		D6A83D9B21B0D4E100D634E6 /* PDFRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFRenderer.swift; sourceTree = "<group>"; };
 		D6A83D9C21B0D4E100D634E6 /* PDFSinglePageViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFSinglePageViewer.swift; sourceTree = "<group>"; };
@@ -151,7 +151,7 @@
 				D6A83D9821B0D4E100D634E6 /* Classes */,
 				D6A83D2921B0D28B00D634E6 /* Assets.xcassets */,
 				D6A83D2B21B0D28B00D634E6 /* LaunchScreen.storyboard */,
-				D6A83D2E21B0D28B00D634E6 /* XYZPDFKit-Info.plist */,
+				D6A83D2E21B0D28B00D634E6 /* Info.plist */,
 			);
 			path = XYZPDFKit;
 			sourceTree = "<group>";
@@ -528,7 +528,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E5VG453CHM;
-				INFOPLIST_FILE = "$(SRCROOT)/XYZPDFKit/XYZPDFKit-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/XYZPDFKit/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -547,7 +547,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E5VG453CHM;
-				INFOPLIST_FILE = "$(SRCROOT)/XYZPDFKit/XYZPDFKit-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/XYZPDFKit/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
