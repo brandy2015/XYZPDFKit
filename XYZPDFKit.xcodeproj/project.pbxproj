@@ -56,6 +56,7 @@
 		D6A83DF521B0D4E100D634E6 /* ResizeableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A83DC821B0D4E100D634E6 /* ResizeableView.swift */; };
 		D6A83DF621B0D4E100D634E6 /* PDFBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A83DC921B0D4E100D634E6 /* PDFBarButton.swift */; };
 		D6A83DF721B0D4E100D634E6 /* PDFTextParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A83DCB21B0D4E100D634E6 /* PDFTextParser.swift */; };
+		D6A83DF921B0DF5D00D634E6 /* XYZPDFKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D6A83DF821B0DF5D00D634E6 /* XYZPDFKit.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +111,7 @@
 		D6A83DC821B0D4E100D634E6 /* ResizeableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResizeableView.swift; sourceTree = "<group>"; };
 		D6A83DC921B0D4E100D634E6 /* PDFBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFBarButton.swift; sourceTree = "<group>"; };
 		D6A83DCB21B0D4E100D634E6 /* PDFTextParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFTextParser.swift; sourceTree = "<group>"; };
+		D6A83DF821B0DF5D00D634E6 /* XYZPDFKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XYZPDFKit.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		D6A83D1621B0D28A00D634E6 = {
 			isa = PBXGroup;
 			children = (
+				D6A83DF821B0DF5D00D634E6 /* XYZPDFKit.podspec */,
 				D6A83D2121B0D28A00D634E6 /* XYZPDFKit */,
 				D6A83D2021B0D28A00D634E6 /* Products */,
 			);
@@ -319,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6A83D2D21B0D28B00D634E6 /* LaunchScreen.storyboard in Resources */,
+				D6A83DF921B0DF5D00D634E6 /* XYZPDFKit.podspec in Resources */,
 				D6A83DE721B0D4E100D634E6 /* .gitkeep in Resources */,
 				D6A83D2A21B0D28B00D634E6 /* Assets.xcassets in Resources */,
 				D6A83D2821B0D28A00D634E6 /* Main.storyboard in Resources */,
