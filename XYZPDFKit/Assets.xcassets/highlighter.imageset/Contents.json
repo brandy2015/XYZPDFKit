@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "highlighter_static.png",
+      "filename" : "jihaobi.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "highlighter_static@2x.png",
+      "filename" : "jihaobi-2.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "highlighter_static@3x.png",
+      "filename" : "jihaobi-3.png",
       "scale" : "3x"
     }
   ],

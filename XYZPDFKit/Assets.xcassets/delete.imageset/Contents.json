@@ -2,15 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "shanchu.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "garbage.png",
+      "filename" : "shanchu-2.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "shanchu-3.png",
       "scale" : "3x"
     }
   ],
