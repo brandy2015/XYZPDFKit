@@ -20,7 +20,7 @@ extension UIImage {
         
         if image == nil {
             let podBundle = Bundle(for: PDFViewController.classForCoder())
-            if let bundleURL = podBundle.url(forResource: "UXMPDFKit", withExtension: "bundle"),
+            if let bundleURL = podBundle.url(forResource: "XYZPDFKit", withExtension: "bundle"),
                 let bundle = Bundle(url: bundleURL) {
                 return UIImage(
                     named: named,
