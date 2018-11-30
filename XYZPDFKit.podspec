@@ -35,9 +35,12 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/brandy2015/XYZPDFKit.git", :tag => "0.0.2"}
   s.source_files = "XYZPDFKit/*"
+  s.ios.source_files = 'XYZPDFKit/Classes/**/*'
 
+  s.resource_bundles = {
+   'UXMPDFKit' => ['XYZPDFKit/Assets.xcassets/**/*.{xcassets,png,json,.imageset}']
+  }
 
-  # s.social_media_url   = "http://twitter.com/Brandy"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
