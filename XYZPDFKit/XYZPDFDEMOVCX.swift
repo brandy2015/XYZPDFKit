@@ -7,6 +7,8 @@
 //
 
 import UIKit
+//userLibrary + "Application Support"
+//中的书签文件偶尔会造成闪退，单独设置删除书签功能，解决此问题
 
 class XYZPDFDEMOVCX: UIViewController {
 
