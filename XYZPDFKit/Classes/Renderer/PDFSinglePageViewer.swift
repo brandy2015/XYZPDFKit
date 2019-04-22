@@ -98,6 +98,10 @@ open class PDFSinglePageViewer: UICollectionView {
             scrollToItem(at: indexPath, at: .centeredHorizontally, animated: animated)
         case .vertical:
             scrollToItem(at: indexPath, at: .top, animated: animated)
+        
+        @unknown default:
+            print()
+           
         }
     }
 
@@ -179,6 +183,10 @@ extension PDFSinglePageViewer: UICollectionViewDelegateFlowLayout {
             }
 
             return CGSize(width: bounds.size.width * widthMultiplier, height: bounds.size.height * heightMultiplier)
+        
+        @unknown default:
+            print()
+            return CGSize(width: 0, height: 0)
         }
     }
 }
@@ -209,7 +217,7 @@ extension PDFSinglePageViewer: UIScrollViewDelegate {
         case .vertical:
             let currentlyShownIndexPath = indexPathsForVisibleItems.first ?? IndexPath(item: 0, section: 0)
             page = currentlyShownIndexPath.row + 1
-        }
+        
 
         /// If nothing has changed, dont reload
         if page == internalPage {
@@ -225,6 +233,11 @@ extension PDFSinglePageViewer: UIScrollViewDelegate {
             if let pageContentView = cell.pageContentView {
                 singlePageDelegate?.singlePageViewer(self, loadedContent: pageContentView)
             }
+        }
+            
+        @unknown default:
+            print()
+            
         }
     }
 }

@@ -113,10 +113,14 @@ open class PDFViewController: UIViewController {
         case .vertical:
             collectionView.isPagingEnabled = false
             pageScrubber.isHidden = true
-        }
         
+        @unknown default:
+            print()
+        }
+    
         self.setupUI()
         collectionView.reloadItems(at: [IndexPath(row: 0, section: 0)])
+        
     }
     
     fileprivate func setupUI() {
@@ -284,6 +288,8 @@ open class PDFViewController: UIViewController {
             }
         case .vertical:
             pageScrubber.isHidden = true
+        @unknown default:
+            print("")
         }
     }
     
