@@ -235,13 +235,25 @@ public class PDFPageContent: UIView {
         ctx.setFillColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         ctx.fill(ctx.boundingBoxOfClipPath)
         
-        /// Translate for page
-        ctx.translateBy(x: 0.0, y: bounds.size.height)
-        ctx.scaleBy(x: 1.0, y: -1.0)
-        ctx.concatenate((pdfPageRef.getDrawingTransform(.cropBox, rect: bounds, rotate: 0, preserveAspectRatio: true)))
         
-        /// Render the PDF page into the context
-        ctx.drawPDFPage(pdfPageRef)
+        DispatchQueue.main.async {
+            /// Translate for page
+            ctx.translateBy(x: 0.0, y: self.bounds.size.height)
+            ctx.scaleBy(x: 1.0, y: -1.0)
+            ctx.concatenate((pdfPageRef.getDrawingTransform(.cropBox, rect: self.bounds, rotate: 0, preserveAspectRatio: true)))
+        }
+            /// Render the PDF page into the context
+            ctx.drawPDFPage(pdfPageRef)
+        
+        
+        
+//        /// Translate for page
+//        ctx.translateBy(x: 0.0, y: bounds.size.height)
+//        ctx.scaleBy(x: 1.0, y: -1.0)
+//        ctx.concatenate((pdfPageRef.getDrawingTransform(.cropBox, rect: bounds, rotate: 0, preserveAspectRatio: true)))
+//
+//        /// Render the PDF page into the context
+//        ctx.drawPDFPage(pdfPageRef)
     }
     
     deinit {
