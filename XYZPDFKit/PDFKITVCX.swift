@@ -17,15 +17,15 @@ class PDFKITVCX: UIViewController {
         // Add PDFView to view controller.
         
         
-        let fileURL = Bundle.main.url(forResource: "Sample", withExtension: "pdf")!
-        
-        let pdfView = PDFView(frame: self.view.bounds)
-        pdfView.document = PDFDocument(url: fileURL)
-        pdfView.autoScales = true
-        pdfView.isUserInteractionEnabled = true
-        pdfView.backgroundColor = .gray
-        pdfView.setNeedsLayout()
-        pdfView.setNeedsDisplay()
+//        let fileURL = Bundle.main.url(forResource: "Sample", withExtension: "pdf")!
+//        
+//        let pdfView = PDFView(frame: self.view.bounds)
+//        pdfView.document = PDFDocument(url: fileURL)
+//        pdfView.autoScales = true
+//        pdfView.isUserInteractionEnabled = true
+//        pdfView.backgroundColor = .gray
+//        pdfView.setNeedsLayout()
+//        pdfView.setNeedsDisplay()
        
 //        pdfView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
 //        self.view.addSubview(pdfView)

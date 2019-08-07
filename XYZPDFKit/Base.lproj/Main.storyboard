@@ -23,7 +23,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-35" y="258"/>
+            <point key="canvasLocation" x="1693" y="258"/>
         </scene>
         <!--PDFKITVCX-->
         <scene sceneID="GEL-yi-ZWf">
@@ -42,25 +42,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="xV2-fi-rfC"/>
                     </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="idx" id="1Cf-It-1BJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lLp-yR-nu9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="904.34782608695662" y="258.48214285714283"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="42y-nE-8fI">
-            <objects>
-                <viewController id="fwu-iD-biL" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="gNM-HU-dmR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="lDu-ZO-NVG"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FOR-bg-vVu" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1624" y="258"/>
         </scene>
     </scenes>
 </document>

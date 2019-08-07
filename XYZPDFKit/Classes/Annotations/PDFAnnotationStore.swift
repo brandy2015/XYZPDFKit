@@ -27,7 +27,7 @@ open class PDFAnnotationStore: NSObject, NSCoding {
     }
 
     func remove(annotation: PDFAnnotation) {
-        if let index = annotations.index(where: { $0.uuid == annotation.uuid }), index > -1 {
+        if let index = annotations.firstIndex(where: { $0.uuid == annotation.uuid }), index > -1 {
             self.delegate?.annotationStore(store: self, removedAnnotation: annotation)
             self.annotations.remove(at: index)
         }

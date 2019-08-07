@@ -229,39 +229,16 @@ public class PDFPageContent: UIView {
         return nil
     }
     
-    var boundsZ = CGRect(x: 0, y: 0, width: 0, height: 0)
-    var heightZ = CGFloat(0)
     //MARK: - CATiledLayer Delegate Methods
     override open func draw(_ layer: CALayer, in ctx: CGContext) {
         guard let pdfPageRef = pdfPageRef else { return }
+        //不需要改，改了出问题，渲染j出错
         ctx.setFillColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         ctx.fill(ctx.boundingBoxOfClipPath)
-        
-        DispatchQueue.main.async {
-            self.boundsZ = self.bounds
-            self.heightZ  = self.bounds.size.height
-        }
-        
-        
-        
-        /// Translate for page
-        ctx.translateBy(x: 0.0, y: heightZ)
+        ctx.translateBy(x: 0.0, y: self.bounds.size.height)
         ctx.scaleBy(x: 1.0, y: -1.0)
-        ctx.concatenate((pdfPageRef.getDrawingTransform(.cropBox, rect: boundsZ, rotate: 0, preserveAspectRatio: true)))
-        
-        /// Render the PDF page into the context
+        ctx.concatenate((pdfPageRef.getDrawingTransform(.cropBox, rect: self.bounds, rotate: 0, preserveAspectRatio: true)))
         ctx.drawPDFPage(pdfPageRef)
-        
-        
-        
-        
-        //        /// Translate for page
-        //        ctx.translateBy(x: 0.0, y: bounds.size.height)
-        //        ctx.scaleBy(x: 1.0, y: -1.0)
-        //        ctx.concatenate((pdfPageRef.getDrawingTransform(.cropBox, rect: bounds, rotate: 0, preserveAspectRatio: true)))
-        //
-        //        /// Render the PDF page into the context
-        //        ctx.drawPDFPage(pdfPageRef)
     }
     
     deinit {

@@ -170,8 +170,16 @@ open class PDFViewController: UIViewController {
         
         coordinator.animate(alongsideTransition: { (context) in
             
+            if #available(iOS 11.0, *) {
+                self.collectionView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor)
+                self.collectionView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor)
+                self.collectionView.leftAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leftAnchor)
+                self.collectionView.rightAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.rightAnchor)
+            } else {
+                
+                self.collectionView.contentInset = UIEdgeInsets(top: self.topLayoutGuide.length, left: 0, bottom: self.bottomLayoutGuide.length, right: 0)
+            }
             
-            self.collectionView.contentInset = UIEdgeInsets(top: self.topLayoutGuide.length, left: 0, bottom: self.bottomLayoutGuide.length, right: 0)
             self.collectionView.collectionViewLayout.invalidateLayout()
             self.pageScrubber.sizeToFit()
         }, completion: { (context) in
@@ -202,17 +210,17 @@ open class PDFViewController: UIViewController {
     open func rightBarButtons() -> [UIBarButtonItem] {
         var buttons: [UIBarButtonItem] = []
         
-        if allowsSharing {
-
-            let shareFormBarButtonItem = PDFBarButton(
-                image: UIImage.bundledImage("share"),
-                toggled: false,
-                target: self,
-                action: #selector(PDFViewController.shareDocument)
-            )
-            buttons.append(shareFormBarButtonItem)
-            self.shareBarButtonItem = shareFormBarButtonItem
-        }
+//        if allowsSharing {
+//
+//            let shareFormBarButtonItem = PDFBarButton(
+//                image: UIImage.bundledImage("share"),
+//                toggled: false,
+//                target: self,
+//                action: #selector(PDFViewController.shareDocument)
+//            )
+//            buttons.append(shareFormBarButtonItem)
+//            self.shareBarButtonItem = shareFormBarButtonItem
+//        }
         
         buttons.append(PDFBarButton(
             image: UIImage.bundledImage("thumbs"),
