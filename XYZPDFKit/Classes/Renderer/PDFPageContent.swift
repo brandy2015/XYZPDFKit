@@ -28,7 +28,7 @@ public class PDFPageContent: UIView {
     }
     
     //MARK: - Init
-    init(pdfDocument: PDFDocument, page: Int, password: String?) {
+    init(pdfDocument: XYZPDFDocument, page: Int, password: String?) {
         pdfDocRef = pdfDocument.documentRef!
         /// Limit the page
         let pages = pdfDocRef.numberOfPages
@@ -91,7 +91,7 @@ public class PDFPageContent: UIView {
         buildAnnotationLinksList()
     }
     
-    convenience init(document: PDFDocument, page: Int) {
+    convenience init(document: XYZPDFDocument, page: Int) {
         self.init(pdfDocument: document, page: page, password: document.password)
     }
     
@@ -229,31 +229,39 @@ public class PDFPageContent: UIView {
         return nil
     }
     
+    var boundsZ = CGRect(x: 0, y: 0, width: 0, height: 0)
+    var heightZ = CGFloat(0)
     //MARK: - CATiledLayer Delegate Methods
     override open func draw(_ layer: CALayer, in ctx: CGContext) {
         guard let pdfPageRef = pdfPageRef else { return }
         ctx.setFillColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         ctx.fill(ctx.boundingBoxOfClipPath)
         
-        
         DispatchQueue.main.async {
-            /// Translate for page
-            ctx.translateBy(x: 0.0, y: self.bounds.size.height)
-            ctx.scaleBy(x: 1.0, y: -1.0)
-            ctx.concatenate((pdfPageRef.getDrawingTransform(.cropBox, rect: self.bounds, rotate: 0, preserveAspectRatio: true)))
+            self.boundsZ = self.bounds
+            self.heightZ  = self.bounds.size.height
         }
-            /// Render the PDF page into the context
-            ctx.drawPDFPage(pdfPageRef)
         
         
         
-//        /// Translate for page
-//        ctx.translateBy(x: 0.0, y: bounds.size.height)
-//        ctx.scaleBy(x: 1.0, y: -1.0)
-//        ctx.concatenate((pdfPageRef.getDrawingTransform(.cropBox, rect: bounds, rotate: 0, preserveAspectRatio: true)))
-//
-//        /// Render the PDF page into the context
-//        ctx.drawPDFPage(pdfPageRef)
+        /// Translate for page
+        ctx.translateBy(x: 0.0, y: heightZ)
+        ctx.scaleBy(x: 1.0, y: -1.0)
+        ctx.concatenate((pdfPageRef.getDrawingTransform(.cropBox, rect: boundsZ, rotate: 0, preserveAspectRatio: true)))
+        
+        /// Render the PDF page into the context
+        ctx.drawPDFPage(pdfPageRef)
+        
+        
+        
+        
+        //        /// Translate for page
+        //        ctx.translateBy(x: 0.0, y: bounds.size.height)
+        //        ctx.scaleBy(x: 1.0, y: -1.0)
+        //        ctx.concatenate((pdfPageRef.getDrawingTransform(.cropBox, rect: bounds, rotate: 0, preserveAspectRatio: true)))
+        //
+        //        /// Render the PDF page into the context
+        //        ctx.drawPDFPage(pdfPageRef)
     }
     
     deinit {

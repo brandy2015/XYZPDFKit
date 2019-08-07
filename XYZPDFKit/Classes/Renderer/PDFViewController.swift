@@ -40,7 +40,7 @@ open class PDFViewController: UIViewController {
     open var scrollDirection: UICollectionView.ScrollDirection = .horizontal
     
     /// A reference to the document that is being displayed
-    var document: PDFDocument!
+    var document: XYZPDFDocument!
     
     /// A reference to the share button
     var shareBarButtonItem: UIBarButtonItem?
@@ -69,7 +69,7 @@ open class PDFViewController: UIViewController {
      
      - Returns: An instance of the PDFViewController
      */
-    public init(document: PDFDocument) {
+    public init(document: XYZPDFDocument) {
         super.init(nibName: nil, bundle: nil)
         self.document = document
     }
@@ -83,7 +83,7 @@ open class PDFViewController: UIViewController {
      
      - Returns: An instance of the PDFViewController
      */
-    public convenience init(document: PDFDocument, annotationController: PDFAnnotationController) {
+    public convenience init(document: XYZPDFDocument, annotationController: PDFAnnotationController) {
         self.init(document: document)
         self.annotationController = PDFAnnotationController(document: self.document, delegate: self)
     }

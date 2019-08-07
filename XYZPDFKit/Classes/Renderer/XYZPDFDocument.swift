@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class PDFDocument: NSObject, NSCoding {
+open class XYZPDFDocument: NSObject, NSCoding {
     
     open var documentRef: CGPDFDocument?
     
@@ -37,19 +37,19 @@ open class PDFDocument: NSObject, NSCoding {
     /// Document annotations
     open var annotations: PDFAnnotationStore = PDFAnnotationStore()
     
-    public static func from(filePath: String, password: String? = nil) throws -> PDFDocument? {
-        if let document = try PDFDocument.unarchiveDocument(filePath: filePath, password: password) {
+    public static func from(filePath: String, password: String? = nil) throws -> XYZPDFDocument? {
+        if let document = try XYZPDFDocument.unarchiveDocument(filePath: filePath, password: password) {
             return document
         }
         else {
-            return try PDFDocument(filePath: filePath, password: password)
+            return try XYZPDFDocument(filePath: filePath, password: password)
         }
     }
     
-    static func unarchiveDocument(filePath: String, password: String?) throws -> PDFDocument? {
+    static func unarchiveDocument(filePath: String, password: String?) throws -> XYZPDFDocument? {
         
-        let archiveFilePath = PDFDocument.archiveFilePathForFile(path: filePath)
-        if let document = NSKeyedUnarchiver.unarchiveObject(withFile: archiveFilePath) as? PDFDocument {
+        let archiveFilePath = XYZPDFDocument.archiveFilePathForFile(path: filePath)
+        if let document = NSKeyedUnarchiver.unarchiveObject(withFile: archiveFilePath) as? XYZPDFDocument {
             document.fileUrl = URL(fileURLWithPath: filePath, isDirectory: false)
             document.password = password
             
@@ -76,7 +76,7 @@ open class PDFDocument: NSObject, NSCoding {
     
     public init(filePath: String, password: String? = nil) throws {
         
-        self.guid = PDFDocument.GUID()
+        self.guid = XYZPDFDocument.GUID()
         self.password = password
         self.fileUrl = URL(fileURLWithPath: filePath, isDirectory: false)
         self.lastOpen = Date()
@@ -89,7 +89,7 @@ open class PDFDocument: NSObject, NSCoding {
     }
     
     public init(fileData: NSData, password: String? = nil) throws {
-        self.guid = PDFDocument.GUID()
+        self.guid = XYZPDFDocument.GUID()
         self.password = password
         self.fileData = fileData
         self.lastOpen = NSDate() as Date
@@ -221,14 +221,14 @@ open class PDFDocument: NSObject, NSCoding {
     }
     
     static func archiveFilePathForFile(path: String) -> String {
-        let archivePath = PDFDocument.applicationSupportPath()
+        let archivePath = XYZPDFDocument.applicationSupportPath()
         
         let archiveName = (path as NSString).lastPathComponent + ".plist"
         return (archivePath as NSString).appendingPathComponent(archiveName)
     }
     
     func archiveWithFileAtPath(_ filePath: String) -> Bool {
-        let archiveFilePath = PDFDocument.archiveFilePathForFile(path: filePath)
+        let archiveFilePath = XYZPDFDocument.archiveFilePathForFile(path: filePath)
         return NSKeyedArchiver.archiveRootObject(self, toFile: archiveFilePath)
     }
     

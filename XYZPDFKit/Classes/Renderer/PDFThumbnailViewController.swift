@@ -14,7 +14,7 @@ public protocol PDFThumbnailViewControllerDelegate {
 
 open class PDFThumbnailViewController: UIViewController {
     
-    var document: PDFDocument!
+    var document: XYZPDFDocument!
     
     var collectionView: UICollectionView!
     private var flowLayout: UICollectionViewFlowLayout {
@@ -28,7 +28,7 @@ open class PDFThumbnailViewController: UIViewController {
     
     public var delegate: PDFThumbnailViewControllerDelegate?
 
-    public init(document: PDFDocument) {
+    public init(document: XYZPDFDocument) {
         super.init(nibName: nil, bundle: nil)
         self.document = document
     }

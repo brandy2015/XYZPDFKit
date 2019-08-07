@@ -13,7 +13,7 @@ public protocol PDFPageScrubberDelegate {
 }
 
 open class PDFPageScrubber: UIToolbar {
-    let document: PDFDocument
+    let document: XYZPDFDocument
     var scrubber = PDFPageScrubberTrackControl()
     
     open var scrubberDelegate: PDFPageScrubberDelegate?
@@ -81,7 +81,7 @@ open class PDFPageScrubber: UIToolbar {
         return pageNumberLabel
     }()
     
-    public init(frame: CGRect, document: PDFDocument) {
+    public init(frame: CGRect, document: XYZPDFDocument) {
         self.document = document
         
         super.init(frame: frame)

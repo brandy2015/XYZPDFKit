@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D69E538D22AF579C00F07274 /* TestPDFKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69E538C22AF579B00F07274 /* TestPDFKit.swift */; };
+		D69E538F22AF57D900F07274 /* PDFKITVCX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69E538E22AF57D900F07274 /* PDFKITVCX.swift */; };
+		D69E539122AF5CA400F07274 /* Sample.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D69E539022AF5CA400F07274 /* Sample.pdf */; };
 		D6A83D2321B0D28A00D634E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A83D2221B0D28A00D634E6 /* AppDelegate.swift */; };
 		D6A83D2521B0D28A00D634E6 /* XYZPDFDEMOVCX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A83D2421B0D28A00D634E6 /* XYZPDFDEMOVCX.swift */; };
 		D6A83D2821B0D28A00D634E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6A83D2621B0D28A00D634E6 /* Main.storyboard */; };
@@ -18,7 +21,7 @@
 		D6A83DCF21B0D4E100D634E6 /* PDFPageTileLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A83D9D21B0D4E100D634E6 /* PDFPageTileLayer.swift */; };
 		D6A83DD021B0D4E100D634E6 /* PDFSinglePageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A83D9E21B0D4E100D634E6 /* PDFSinglePageCell.swift */; };
 		D6A83DD121B0D4E100D634E6 /* PDFPageScrubberThumb.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A83D9F21B0D4E100D634E6 /* PDFPageScrubberThumb.swift */; };
-		D6A83DD221B0D4E100D634E6 /* PDFDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A83DA021B0D4E100D634E6 /* PDFDocument.swift */; };
+		D6A83DD221B0D4E100D634E6 /* XYZPDFDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A83DA021B0D4E100D634E6 /* XYZPDFDocument.swift */; };
 		D6A83DD321B0D4E100D634E6 /* PDFPageContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A83DA121B0D4E100D634E6 /* PDFPageContent.swift */; };
 		D6A83DD421B0D4E100D634E6 /* PDFPageScrubber.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A83DA221B0D4E100D634E6 /* PDFPageScrubber.swift */; };
 		D6A83DD521B0D4E100D634E6 /* PDFPageScrubberTrackControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A83DA321B0D4E100D634E6 /* PDFPageScrubberTrackControl.swift */; };
@@ -60,6 +63,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D69E538C22AF579B00F07274 /* TestPDFKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPDFKit.swift; sourceTree = "<group>"; };
+		D69E538E22AF57D900F07274 /* PDFKITVCX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKITVCX.swift; sourceTree = "<group>"; };
+		D69E539022AF5CA400F07274 /* Sample.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Sample.pdf; sourceTree = "<group>"; };
 		D6A83D1F21B0D28A00D634E6 /* XYZPDFKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYZPDFKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6A83D2221B0D28A00D634E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6A83D2421B0D28A00D634E6 /* XYZPDFDEMOVCX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZPDFDEMOVCX.swift; sourceTree = "<group>"; };
@@ -73,7 +79,7 @@
 		D6A83D9D21B0D4E100D634E6 /* PDFPageTileLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFPageTileLayer.swift; sourceTree = "<group>"; };
 		D6A83D9E21B0D4E100D634E6 /* PDFSinglePageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFSinglePageCell.swift; sourceTree = "<group>"; };
 		D6A83D9F21B0D4E100D634E6 /* PDFPageScrubberThumb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFPageScrubberThumb.swift; sourceTree = "<group>"; };
-		D6A83DA021B0D4E100D634E6 /* PDFDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFDocument.swift; sourceTree = "<group>"; };
+		D6A83DA021B0D4E100D634E6 /* XYZPDFDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYZPDFDocument.swift; sourceTree = "<group>"; };
 		D6A83DA121B0D4E100D634E6 /* PDFPageContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFPageContent.swift; sourceTree = "<group>"; };
 		D6A83DA221B0D4E100D634E6 /* PDFPageScrubber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFPageScrubber.swift; sourceTree = "<group>"; };
 		D6A83DA321B0D4E100D634E6 /* PDFPageScrubberTrackControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFPageScrubberTrackControl.swift; sourceTree = "<group>"; };
@@ -147,11 +153,14 @@
 			children = (
 				D6A83D2221B0D28A00D634E6 /* AppDelegate.swift */,
 				D6A83D2421B0D28A00D634E6 /* XYZPDFDEMOVCX.swift */,
+				D69E539022AF5CA400F07274 /* Sample.pdf */,
 				D6A83D2621B0D28A00D634E6 /* Main.storyboard */,
 				D6A83D9821B0D4E100D634E6 /* Classes */,
 				D6A83D2921B0D28B00D634E6 /* Assets.xcassets */,
 				D6A83D2B21B0D28B00D634E6 /* LaunchScreen.storyboard */,
 				D6A83D2E21B0D28B00D634E6 /* Info.plist */,
+				D69E538C22AF579B00F07274 /* TestPDFKit.swift */,
+				D69E538E22AF57D900F07274 /* PDFKITVCX.swift */,
 			);
 			path = XYZPDFKit;
 			sourceTree = "<group>";
@@ -180,7 +189,7 @@
 				D6A83D9D21B0D4E100D634E6 /* PDFPageTileLayer.swift */,
 				D6A83D9E21B0D4E100D634E6 /* PDFSinglePageCell.swift */,
 				D6A83D9F21B0D4E100D634E6 /* PDFPageScrubberThumb.swift */,
-				D6A83DA021B0D4E100D634E6 /* PDFDocument.swift */,
+				D6A83DA021B0D4E100D634E6 /* XYZPDFDocument.swift */,
 				D6A83DA121B0D4E100D634E6 /* PDFPageContent.swift */,
 				D6A83DA221B0D4E100D634E6 /* PDFPageScrubber.swift */,
 				D6A83DA321B0D4E100D634E6 /* PDFPageScrubberTrackControl.swift */,
@@ -326,6 +335,7 @@
 				D6A83DE721B0D4E100D634E6 /* .gitkeep in Resources */,
 				D6A83D2A21B0D28B00D634E6 /* Assets.xcassets in Resources */,
 				D6A83D2821B0D28A00D634E6 /* Main.storyboard in Resources */,
+				D69E539122AF5CA400F07274 /* Sample.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +369,7 @@
 				D6A83DF621B0D4E100D634E6 /* PDFBarButton.swift in Sources */,
 				D6A83DEC21B0D4E100D634E6 /* CGRect.swift in Sources */,
 				D6A83DEE21B0D4E100D634E6 /* PDFAnnotationStore.swift in Sources */,
+				D69E538F22AF57D900F07274 /* PDFKITVCX.swift in Sources */,
 				D6A83DD821B0D4E100D634E6 /* CGPDFDocument.swift in Sources */,
 				D6A83DD621B0D4E100D634E6 /* PDFThumbnailViewController.swift in Sources */,
 				D6A83DDB21B0D4E100D634E6 /* PDFPageContentView.swift in Sources */,
@@ -371,13 +382,14 @@
 				D6A83DF721B0D4E100D634E6 /* PDFTextParser.swift in Sources */,
 				D6A83D2521B0D28A00D634E6 /* XYZPDFDEMOVCX.swift in Sources */,
 				D6A83DF021B0D4E100D634E6 /* PDFPathAnnotation.swift in Sources */,
+				D69E538D22AF579C00F07274 /* TestPDFKit.swift in Sources */,
 				D6A83DD921B0D4E100D634E6 /* PDFThumbnailView.swift in Sources */,
 				D6A83DDD21B0D4E100D634E6 /* PDFArray.swift in Sources */,
 				D6A83DD121B0D4E100D634E6 /* PDFPageScrubberThumb.swift in Sources */,
 				D6A83DCE21B0D4E100D634E6 /* PDFSinglePageViewer.swift in Sources */,
 				D6A83DD021B0D4E100D634E6 /* PDFSinglePageCell.swift in Sources */,
 				D6A83DE921B0D4E100D634E6 /* CGPoint.swift in Sources */,
-				D6A83DD221B0D4E100D634E6 /* PDFDocument.swift in Sources */,
+				D6A83DD221B0D4E100D634E6 /* XYZPDFDocument.swift in Sources */,
 				D6A83D2321B0D28A00D634E6 /* AppDelegate.swift in Sources */,
 				D6A83DF521B0D4E100D634E6 /* ResizeableView.swift in Sources */,
 				D6A83DE121B0D4E100D634E6 /* PDFFormField.swift in Sources */,
@@ -529,7 +541,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E5VG453CHM;
 				INFOPLIST_FILE = "$(SRCROOT)/XYZPDFKit/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -548,7 +560,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E5VG453CHM;
 				INFOPLIST_FILE = "$(SRCROOT)/XYZPDFKit/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

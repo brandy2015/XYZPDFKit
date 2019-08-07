@@ -28,7 +28,7 @@ open class PDFSinglePageFlowLayout: UICollectionViewFlowLayout {
 open class PDFSinglePageViewer: UICollectionView {
 
     open var singlePageDelegate: PDFSinglePageViewerDelegate?
-    open var document: PDFDocument?
+    open var document: XYZPDFDocument?
 
     var internalPage: Int = 0
 
@@ -46,7 +46,7 @@ open class PDFSinglePageViewer: UICollectionView {
         return layout
     }
 
-    public init(frame: CGRect, document: PDFDocument) {
+    public init(frame: CGRect, document: XYZPDFDocument) {
         self.document = document
 
         super.init(frame: frame, collectionViewLayout: PDFSinglePageViewer.flowLayout)

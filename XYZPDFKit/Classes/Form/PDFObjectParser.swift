@@ -9,10 +9,10 @@
 import UIKit
 
 open class PDFObjectParser {
-    let document: PDFDocument
+    let document: XYZPDFDocument
     let attributes: PDFDictionary?
     
-    public init(document: PDFDocument) {
+    public init(document: XYZPDFDocument) {
         self.document = document
         if let catalogue = document.documentRef?.catalog {
             attributes = PDFDictionary(dictionaryRef: catalogue)

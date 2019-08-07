@@ -13,11 +13,11 @@ import CoreGraphics
 open class PDFFormViewController: NSObject {
     var formPages: [Int: PDFFormPage] = [:]
     
-    let document: PDFDocument
+    let document: XYZPDFDocument
     let parser: PDFObjectParser
     var lastPage: PDFPageContentView?
     
-    public init(document: PDFDocument) {
+    public init(document: XYZPDFDocument) {
         self.document = document
         
         parser = PDFObjectParser(document: document)

@@ -24,7 +24,7 @@ class PDFThumbnailViewCell: UICollectionViewCell {
         self.backgroundColor = UIColor.lightGray
     }
     
-    func configure(document: PDFDocument, page: Int) {
+    func configure(document: XYZPDFDocument, page: Int) {
         pageThumbnail?.removeFromSuperview()
         pageThumbnail = PDFThumbnailView(frame: CGRect(x: 1,
                                                        y: 1,

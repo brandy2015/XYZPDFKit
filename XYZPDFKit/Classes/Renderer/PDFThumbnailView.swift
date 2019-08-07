@@ -40,12 +40,12 @@ internal class PDFThumbnailView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    convenience init(frame: CGRect, document: PDFDocument, page: Int) {
+    convenience init(frame: CGRect, document: XYZPDFDocument, page: Int) {
         self.init(frame: frame)
         showImage(document, page: page)
     }
 
-    func showImage(_ document: PDFDocument, page: Int) {
+    func showImage(_ document: XYZPDFDocument, page: Int) {
         imageView.image = nil
         PDFQueue.sharedQueue.fetchPage(document, page: page, size: frame.size) { (thumbnail) in
             self.imageView.image = thumbnail.image
