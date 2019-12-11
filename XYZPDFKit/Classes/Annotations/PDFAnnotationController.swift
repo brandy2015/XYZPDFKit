@@ -15,6 +15,8 @@ public protocol PDFAnnotationControllerProtocol {
 
 open class PDFAnnotationController: UIViewController {
     
+    
+    
     /// Reference to document
     var document: XYZPDFDocument!
     

@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "XYZPDFKit"
-  s.version      = "1.0.4"
+  s.version      = "1.1.1"
   s.summary      = "持续升级"
   s.description  = <<-DESC
                         PDFkit in Swift Update for UXMPDFKit
@@ -26,14 +26,14 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5.0' }
 # s.dependency 'FileKit'
 
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '13.0'
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author             = { "Brandy" => "" }
 
 
   s.authors            = { "Brandy" => "zhangqianbrandy2012@gmail.com" }
-  s.platform     = :ios, "9.0"
-  s.source       = { :git => "https://github.com/brandy2015/XYZPDFKit.git", :tag => "1.0.4"}
+  s.platform     = :ios, "13.0"
+  s.source       = { :git => "https://github.com/brandy2015/XYZPDFKit.git", :tag => "1.1.1"}
   s.source_files = 'XYZPDFKit/Classes/**/*'
   s.ios.source_files = 'XYZPDFKit/Classes/**/*'
 
@@ -55,10 +55,10 @@ Pod::Spec.new do |s|
 
 
   #  When using multiple platforms
-  # s.ios.deployment_target = "5.0"
+  # s.ios.deployment_target = "13.0"
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
-  # s.tvos.deployment_target = "9.0"
+  # s.tvos.deployment_target = "4.0"
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
