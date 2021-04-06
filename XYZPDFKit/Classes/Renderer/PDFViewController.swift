@@ -169,17 +169,10 @@ open class PDFViewController: UIViewController {
         super.viewWillTransition(to: size, with: coordinator)
         
         coordinator.animate(alongsideTransition: { (context) in
-            
-            if #available(iOS 11.0, *) {
-                self.collectionView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor)
-                self.collectionView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor)
-                self.collectionView.leftAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leftAnchor)
-                self.collectionView.rightAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.rightAnchor)
-            } else {
-                
-                self.collectionView.contentInset = UIEdgeInsets(top: self.topLayoutGuide.length, left: 0, bottom: self.bottomLayoutGuide.length, right: 0)
-            }
-            
+            _ = self.collectionView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor)
+            _ = self.collectionView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor)
+            _ = self.collectionView.leftAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leftAnchor)
+            _ = self.collectionView.rightAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.rightAnchor)
             self.collectionView.collectionViewLayout.invalidateLayout()
             self.pageScrubber.sizeToFit()
         }, completion: { (context) in

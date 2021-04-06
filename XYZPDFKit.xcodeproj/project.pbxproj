@@ -539,14 +539,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E5VG453CHM;
+				DEVELOPMENT_TEAM = 9GZYHL8TWB;
 				INFOPLIST_FILE = "$(SRCROOT)/XYZPDFKit/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhangqian.XYZPDFKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.XYZTech.XYZPDFKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -558,14 +558,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E5VG453CHM;
+				DEVELOPMENT_TEAM = 9GZYHL8TWB;
 				INFOPLIST_FILE = "$(SRCROOT)/XYZPDFKit/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhangqian.XYZPDFKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.XYZTech.XYZPDFKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
