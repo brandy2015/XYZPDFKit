@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		D69E538D22AF579C00F07274 /* TestPDFKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69E538C22AF579B00F07274 /* TestPDFKit.swift */; };
 		D69E538F22AF57D900F07274 /* PDFKITVCX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69E538E22AF57D900F07274 /* PDFKITVCX.swift */; };
-		D69E539122AF5CA400F07274 /* Sample.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D69E539022AF5CA400F07274 /* Sample.pdf */; };
 		D6A83D2321B0D28A00D634E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A83D2221B0D28A00D634E6 /* AppDelegate.swift */; };
 		D6A83D2521B0D28A00D634E6 /* XYZPDFDEMOVCX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A83D2421B0D28A00D634E6 /* XYZPDFDEMOVCX.swift */; };
 		D6A83D2821B0D28A00D634E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6A83D2621B0D28A00D634E6 /* Main.storyboard */; };
@@ -42,7 +41,6 @@
 		D6A83DE421B0D4E100D634E6 /* PDFFormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A83DB321B0D4E100D634E6 /* PDFFormTextField.swift */; };
 		D6A83DE521B0D4E100D634E6 /* PDFFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A83DB421B0D4E100D634E6 /* PDFFormViewController.swift */; };
 		D6A83DE621B0D4E100D634E6 /* PDFFormPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A83DB521B0D4E100D634E6 /* PDFFormPageView.swift */; };
-		D6A83DE721B0D4E100D634E6 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = D6A83DB621B0D4E100D634E6 /* .gitkeep */; };
 		D6A83DE821B0D4E100D634E6 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A83DB821B0D4E100D634E6 /* UIColor.swift */; };
 		D6A83DE921B0D4E100D634E6 /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A83DB921B0D4E100D634E6 /* CGPoint.swift */; };
 		D6A83DEA21B0D4E100D634E6 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A83DBA21B0D4E100D634E6 /* UIImage.swift */; };
@@ -65,7 +63,6 @@
 /* Begin PBXFileReference section */
 		D69E538C22AF579B00F07274 /* TestPDFKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPDFKit.swift; sourceTree = "<group>"; };
 		D69E538E22AF57D900F07274 /* PDFKITVCX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKITVCX.swift; sourceTree = "<group>"; };
-		D69E539022AF5CA400F07274 /* Sample.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Sample.pdf; sourceTree = "<group>"; };
 		D6A83D1F21B0D28A00D634E6 /* XYZPDFKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYZPDFKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6A83D2221B0D28A00D634E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6A83D2421B0D28A00D634E6 /* XYZPDFDEMOVCX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZPDFDEMOVCX.swift; sourceTree = "<group>"; };
@@ -100,7 +97,6 @@
 		D6A83DB321B0D4E100D634E6 /* PDFFormTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFFormTextField.swift; sourceTree = "<group>"; };
 		D6A83DB421B0D4E100D634E6 /* PDFFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFFormViewController.swift; sourceTree = "<group>"; };
 		D6A83DB521B0D4E100D634E6 /* PDFFormPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFFormPageView.swift; sourceTree = "<group>"; };
-		D6A83DB621B0D4E100D634E6 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		D6A83DB821B0D4E100D634E6 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		D6A83DB921B0D4E100D634E6 /* CGPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPoint.swift; sourceTree = "<group>"; };
 		D6A83DBA21B0D4E100D634E6 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
@@ -153,7 +149,6 @@
 			children = (
 				D6A83D2221B0D28A00D634E6 /* AppDelegate.swift */,
 				D6A83D2421B0D28A00D634E6 /* XYZPDFDEMOVCX.swift */,
-				D69E539022AF5CA400F07274 /* Sample.pdf */,
 				D6A83D2621B0D28A00D634E6 /* Main.storyboard */,
 				D6A83D9821B0D4E100D634E6 /* Classes */,
 				D6A83D2921B0D28B00D634E6 /* Assets.xcassets */,
@@ -170,7 +165,6 @@
 			children = (
 				D6A83D9921B0D4E100D634E6 /* Renderer */,
 				D6A83DAB21B0D4E100D634E6 /* Form */,
-				D6A83DB621B0D4E100D634E6 /* .gitkeep */,
 				D6A83DB721B0D4E100D634E6 /* Extensions */,
 				D6A83DBD21B0D4E100D634E6 /* Annotations */,
 				D6A83DC321B0D4E100D634E6 /* Model */,
@@ -299,7 +293,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "张子豪";
 				TargetAttributes = {
 					D6A83D1E21B0D28A00D634E6 = {
@@ -332,10 +326,8 @@
 			files = (
 				D6A83D2D21B0D28B00D634E6 /* LaunchScreen.storyboard in Resources */,
 				D6A83DF921B0DF5D00D634E6 /* XYZPDFKit.podspec in Resources */,
-				D6A83DE721B0D4E100D634E6 /* .gitkeep in Resources */,
 				D6A83D2A21B0D28B00D634E6 /* Assets.xcassets in Resources */,
 				D6A83D2821B0D28A00D634E6 /* Main.storyboard in Resources */,
-				D69E539122AF5CA400F07274 /* Sample.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +436,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -505,6 +498,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
