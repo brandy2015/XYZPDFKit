@@ -1,6 +1,6 @@
 # XYZPDFKit
 Easy way in Swift
-自用的HUD
+自用的PDF
 
 
 
